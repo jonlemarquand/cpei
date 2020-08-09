@@ -1,0 +1,45 @@
+@import '../../styles/shared.scss';
+
+.results-table {
+    width: 700px;
+}
+
+.results-letter {
+    width: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $tiWhite;
+    font-family: $primaryFont;
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+.results-list {
+    min-height: 100px;
+}
+
+.results-A, .results-B, .results-C, .results-D, .results-E, .results-F {
+    display: flex;
+}
+
+.results-A {
+    background: $scoreA;
+}
+.results-B {
+    background: $scoreB;
+}
+.results-C {
+    background: $scoreC;
+}
+.results-D {
+    background: $scoreD;
+}
+.results-E {
+    background: $scoreE;
+}
+.results-F {
+    background: $scoreF;
+}
