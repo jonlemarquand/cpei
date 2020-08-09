@@ -1,0 +1,34 @@
+{
+    "gsk": [
+        {
+            "display-name": "GlaxoSmithKline",
+            "industry": "pharma",
+            "results": [ 
+                {
+                    "overall": "A",
+                    "control": "A",
+                    "political": "B",
+                    "responsible": "B",
+                    "revolving": "A",
+                    "transparency": "A"
+                }
+            ]
+        }
+    ],
+    "barclays": [
+        {
+            "display-name": "Barclays",
+            "industry": "accounting",
+            "results": [ 
+                {
+                    "overall": "A",
+                    "control": "B",
+                    "political": "C",
+                    "responsible": "D",
+                    "revolving": "E",
+                    "transparency": "C"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@400;500;700&display=swap');
+
+@import 'styles/shared.scss';
+
+h1 {
+  text-align: center;
+  font-family: $primaryFont;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $secondaryFont;
+  font-size: 14px;
+}
+
+.App {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

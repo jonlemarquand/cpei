@@ -1,0 +1,15 @@
+.intro-section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+
+    .youtube-video {
+        width: 400px;
+    }
+
+    .intro-text {
+        width: 50%;
+    }
+}
