@@ -15,6 +15,10 @@
     border: none;
     text-align: left;
 
+    &:focus {
+        outline: none;
+    }
+
     &.active-filter {
         background: $tiPink;
     }

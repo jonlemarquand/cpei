@@ -5,10 +5,6 @@ import FilterButton from '../../components/Shared/FilterButton';
 import './ResultsFilter.scss';
 
 const ResultsFilter = ({ theme, industry, onThemeChange, onIndustryChange }) => {
-    const testFunction = (e) => {
-        console.log(e);
-    }
-
     const ThemesList = [
         {name: "Overall", value: "overall"},
         {name: "Control Environment", value: "control"},
@@ -33,27 +29,33 @@ const ResultsFilter = ({ theme, industry, onThemeChange, onIndustryChange }) => 
         {name:"Telecommunication and Media", value: "telecomms"}
     ]
 
-    const FilterThemes = (Items) => {
-        return Items.map(item =>
-            <FilterButton name={item.name} value={item.value} onCategoryChange={onThemeChange}
+    const FilterThemes = ThemesList.map(item => {
+        if (theme === item.value) {
+            return <FilterButton name={item.name} value={item.value} onCategoryChange={onThemeChange} active="active-filter"/>
+        } else {
+            return <FilterButton name={item.name} value={item.value} onCategoryChange={onThemeChange}
             active=""/>
-        )
-    }
-    const FilterIndustries = (Items) => {
-        return Items.map(item => 
-            <FilterButton name={item.name} value={item.value} onCategoryChange={onIndustryChange}
+        }
+    })
+
+    const FilterIndustries = IndustriesList.map(item => {
+        if (industry === item.value) {
+            return <FilterButton name={item.name} value={item.value} onCategoryChange={onIndustryChange} active="active-filter"/>
+        } else {
+            return <FilterButton name={item.name} value={item.value} onCategoryChange={onIndustryChange}
             active=""/>
-        )
-    }
+        }
+    })
+
     return (
         <div>
             <h3>Filter By Theme</h3>
             <div className="filter-list">
-              {FilterThemes(ThemesList)}
+                { FilterThemes }
             </div>
             <h3>Filter By Industry</h3>
             <div className="filter-list">
-                {FilterIndustries(IndustriesList)}
+                { FilterIndustries }
             </div>
         </div>
     )
