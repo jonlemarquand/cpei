@@ -20,11 +20,16 @@
 }
 
 .results-list {
-    min-height: 100px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .results-A, .results-B, .results-C, .results-D, .results-E, .results-F {
     display: flex;
+
 }
 
 .results-A {

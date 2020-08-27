@@ -1,3 +1,13 @@
+@import '../styles/shared.scss';
+
 .results-section {
     display: flex;
+}
+
+.company {
+    width: 33%;
+    font-family: $primaryFont;
+    font-weight: 600;
+    font-size: 14px;
+    color: $tiWhite;
 }
