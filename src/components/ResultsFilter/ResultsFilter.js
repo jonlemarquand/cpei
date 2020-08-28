@@ -9,7 +9,7 @@ const ResultsFilter = ({ theme, industry, onThemeChange, onIndustryChange }) => 
         {name: "Overall", value: "overall"},
         {name: "Control Environment", value: "control"},
         {name: "Political Contributions", value: "political"},
-        {name: "Responsible Lobbying", value: "lobbying"},
+        {name: "Responsible Lobbying", value: "responsible"},
         {name: "Revolving Door", value: "revolving"},
         {name: "Transparency", value: "transparency"}
     ]

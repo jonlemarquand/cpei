@@ -20,7 +20,42 @@ const Results = () => {
     }
 
     const AScores = cpeiData.map(company => {
-        if (company.results.[0].[theme] === "A" && (industry === 'all' || industry === company.industry)) {
+        if (company.[theme] === "A" && (industry === 'all' || industry === company.industry)) {
+            return <div className="company">{company.display}</div>
+        }
+        return null;
+    })
+
+    const BScores = cpeiData.map(company => {
+        if (company.[theme] === "B" && (industry === 'all' || industry === company.industry)) {
+            return <div className="company">{company.display}</div>
+        }
+        return null;
+    })
+
+    const CScores = cpeiData.map(company => {
+        if (company.[theme] === "C" && (industry === 'all' || industry === company.industry)) {
+            return <div className="company">{company.display}</div>
+        }
+        return null;
+    })
+
+    const DScores = cpeiData.map(company => {
+        if (company.[theme] === "D" && (industry === 'all' || industry === company.industry)) {
+            return <div className="company">{company.display}</div>
+        }
+        return null;
+    })
+
+    const EScores = cpeiData.map(company => {
+        if (company.[theme] === "E" && (industry === 'all' || industry === company.industry)) {
+            return <div className="company">{company.display}</div>
+        }
+        return null;
+    })
+
+    const FScores = cpeiData.map(company => {
+        if (company.[theme] === "F" && (industry === 'all' || industry === company.industry)) {
             return <div className="company">{company.display}</div>
         }
         return null;
@@ -36,7 +71,15 @@ const Results = () => {
                 industry={industry}
                 onIndustryChange={onIndustryChange}
             />
-            <ResultsTable AScores={AScores} />
+            <ResultsTable 
+                AScores={AScores}
+                BScores={BScores} 
+                CScores={CScores} 
+                DScores={DScores} 
+                EScores={EScores} 
+                FScores={FScores} 
+ 
+            />
             </div>
         </div>
     )
