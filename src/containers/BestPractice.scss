@@ -1,0 +1,71 @@
+@import '../styles/shared.scss';
+
+.bp-section {
+    height: 600px;
+    width: 1140px;
+    background: $tiBlue;
+    display: flex;
+    flex-direction: column;
+}
+
+.bp-options ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+        margin-left: 0;
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+        color: $tiWhite;
+        font-family: $primaryFont;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid $tiWhite;
+    
+        &.active-li {
+            background: $tiPink;
+        }
+
+        &:hover {
+            background: $tiGreen;
+            cursor: pointer;
+        }
+    }
+}
+
+.bp-content {
+    padding: 40px;
+    color: $tiWhite;
+    
+    .bp-column-text {
+        width: 50%;
+        
+        p, ul {
+            font-weight: 600;
+        }
+
+    }
+
+    .bp-read-more {
+        margin-top: 10px;
+        background: $tiPink;
+        color: $tiWhite;
+        border: 2px solid $tiWhite;
+        padding: 10px 20px;
+        font-weight: 700;
+        font-size: 16px;
+
+        &:hover {
+            background: $tiGreen;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
