@@ -44,6 +44,7 @@
 .bp-content {
     padding: 40px;
     color: $tiWhite;
+    display: flex;
     
     .bp-column-text {
         width: 50%;
@@ -54,8 +55,19 @@
 
     }
 
+    .bp-column-img {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        width: 30%;
+    
+        img {
+            max-height: 450px;
+        }
+    }
+
     .bp-read-more {
-        margin-top: 10px;
+        margin-top: 20px;
         background: $tiPink;
         color: $tiWhite;
         border: 2px solid $tiWhite;
