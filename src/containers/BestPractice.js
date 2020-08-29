@@ -27,6 +27,7 @@ const BestPractice = () => {
         }
         return 'Test'
     }
+    
     return (
         <div id="best-practice">
             <h2>Best Practice</h2>
